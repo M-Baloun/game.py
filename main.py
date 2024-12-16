@@ -1,9 +1,9 @@
 hp = 100
 Exp = 0
 def welcome_screen():
-    print("#############################")
+    print("-----------------------------")
     print("      Vítej v RPG hře        ")
-    print("#############################")
+    print("-----------------------------")
 
     print("\nMenu:")
     print("1 - Zahájit hru")
