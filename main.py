@@ -1,7 +1,8 @@
+import random
 
 global hp, xp, money
 
-import random
+
 hp = 100
 xp = 0
 money = 0
@@ -95,7 +96,12 @@ def training_course():
     print("1 - Útok")
     print("2 - Obrana")
 
-    number = random.randrange(start=1, stop=100)
+    random_chance = random.randint(1, 100)
+
+    if random_chance < 50:
+        print("vyhral jsi")
+    else:
+        print("prohral jsi")
 
 def main():
     welcome_screen()
